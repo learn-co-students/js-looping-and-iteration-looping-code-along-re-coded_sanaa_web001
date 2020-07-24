@@ -1,10 +1,12 @@
 // Code your solutions in this file
 function writeCards( names, gifts ) {
     let arr = []
-    for (  i = 0; i < names.length; i++ ) {
+    let i=0;
+    names.forEach(name => {
     //   arr.push( `Thank you, ${names[i]}, for the wonderful ${gifts[i]} gift!` )
-      arr.push( `Thank you, ${names[i]}, for the wonderful ${gifts} gift!` )
-    }
+      arr.push( `Thank you, ${name}, for the wonderful ${gifts} gift!` );
+      i++;
+    });
     return arr;
   }
   
